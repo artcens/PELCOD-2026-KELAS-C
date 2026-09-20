@@ -1,17 +1,3 @@
-from math import trunc
-
-def receipt():
-    print(f"Jenis mobil: {mobil}")
-    print(f"Lama sewa: {durasiSewa} Hari")
-    print(f"Asuransi: Rp{asuransi}")
-    print()
-    print(f"Sub-Total: Rp{subTotal}")
-    print(f"Diskon Sewa: Rp{diskonSewa}")
-    print(f"Diskon Kupon: Rp{diskonKupon}")
-    print()
-    print(f"Total Bayar: Rp{total}")
-    print()
-
 print("1. Brio - 150.000/hari")
 print("2. Avanza - 200.000/hari")
 print("3. Fortuner - 250.000/hari")
@@ -45,17 +31,26 @@ else:
 subTotal = biayaSewa + asuransi
 
 if subTotal >= 500000:
-    diskonSewa = trunc(subTotal * 10/100)
+    diskonSewa = subTotal * 10/100
 else:
     diskonSewa = 0
 
 setelahDiskon = subTotal - diskonSewa
 
 if kupon == "AMBATUNER":
-    diskonKupon = trunc(setelahDiskon * 5/100)
+    diskonKupon = setelahDiskon * 5/100
 else:
     diskonKupon = 0
 
 total = setelahDiskon - diskonKupon
 
-receipt()
+print(f"Jenis mobil: {mobil}")
+print(f"Lama sewa: {durasiSewa} Hari")
+print(f"Asuransi: Rp{asuransi}")
+print()
+print(f"Sub-Total: Rp{subTotal}")
+print(f"Diskon Sewa: Rp{diskonSewa}")
+print(f"Diskon Kupon: Rp{diskonKupon}")
+print()
+print(f"Total Bayar: Rp{total}")
+print()

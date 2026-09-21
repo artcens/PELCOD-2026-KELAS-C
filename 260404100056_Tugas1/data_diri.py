@@ -45,4 +45,4 @@ if (student_birthYear < current_year and student_birthYear > 1900) and (student_
     print("variabel student_age bertipe", type(student_age))
     print()
 else:
-    print("Data tidak valid!")
+    print("Data yang di-input tidak valid!")

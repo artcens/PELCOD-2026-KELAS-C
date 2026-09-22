@@ -1,20 +1,26 @@
-## Taruh data di dalam variabel
+# Taruh data di dalam variabel
 student_name = "Tantra Firjatullah"
 student_nim = "260404100056"
 student_bornIn = "Sampang"
 student_address = "Jalan Mutiara, Gg. 2, No. 14"
 student_hobby = "Membaca"
 
-## Input tahun lahir dan IPK mahasiswa
+student_name = input("Masukkan Nama: ")
+student_nim = input("Masukkan NIM: ")
+student_bornIn = input("Masukkan Tempat Lahir: ")
+student_address = input("Masukkan Nama: ")
+student_hobby = "Membaca"
+
+# Input tahun lahir dan IPK mahasiswa
 print()
 student_birthYear = int(input("Masukkan tahun kelahiran kamu: "))
 student_GPA = float(input("Masukkan IPK kamu: "))
 print()
 
-## tahun saat ini
+# tahun saat ini
 current_year = 2026
 
-## Hitung dan tampilkan umur saat ini
+# Hitung dan tampilkan umur saat ini
 student_age = current_year - student_birthYear
 
 if (student_birthYear < current_year and student_birthYear > 1900) and (student_GPA >= 0 and student_GPA <= 4) :
@@ -24,7 +30,7 @@ if (student_birthYear < current_year and student_birthYear > 1900) and (student_
     print("kamu berumur 30 tahun pada tahun", (student_birthYear + 30))
     print()
 
-    ## Tampilkan seluruh data diri
+    # Tampilkan seluruh data diri
     print(f"Nama: {student_name}")
     print(f"NIM: {student_nim}")
     print(f"Lahir di: {student_bornIn}, pada tahun {student_birthYear}")
@@ -33,7 +39,7 @@ if (student_birthYear < current_year and student_birthYear > 1900) and (student_
     print(f"Hobby: {student_hobby}")
     print()
 
-    ## Tampilkan seluruh tipe variabel yang digunakan
+    # Tampilkan seluruh tipe variabel yang digunakan
     print("variabel student_name bertipe", type(student_name))
     print("variabel student_nim bertipe", type(student_nim))
     print("variabel student_bornIn bertipe", type(student_bornIn))

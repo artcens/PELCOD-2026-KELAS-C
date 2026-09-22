@@ -5,11 +5,11 @@ student_bornIn = "Sampang"
 student_address = "Jalan Mutiara, Gg. 2, No. 14"
 student_hobby = "Membaca"
 
-student_name = input("Masukkan Nama: ")
-student_nim = input("Masukkan NIM: ")
-student_bornIn = input("Masukkan Tempat Lahir: ")
-student_address = input("Masukkan Nama: ")
-student_hobby = "Membaca"
+# student_name = input("Masukkan Nama: ")
+# student_nim = input("Masukkan NIM: ")
+# student_bornIn = input("Masukkan Tempat Lahir: ")
+# student_address = input("Masukkan Alamat: ")
+# student_hobby = input("Masukkan Hobby: ")
 
 # Input tahun lahir dan IPK mahasiswa
 print()

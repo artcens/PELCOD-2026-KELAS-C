@@ -2,7 +2,7 @@
 student_name = "Tantra Firjatullah"
 student_nim = "260404100056"
 dest_city = "Malang"
-luggage_weight = 27.4
+luggage_weight = 12.5
 is_ktm = True
 
 print()
